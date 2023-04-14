@@ -1,0 +1,15 @@
+Package: mars
+Title: Multivariate Adaptive Regression Splines (MARS)
+Version: 0.0.0.9000
+Authors@R: c(
+  person("Yanning","Chen", email = "yca394@sfu.ca", role = "cre"),
+  person("Jiawei", "Lin", email = "vera_lin@sfu.ca", role = "aut"),
+  person("Isabah Tabenda", "Hasan", email = "ith@sfu.ca", role = c("cph", "fnd")))
+Description: Mars is a form of stepwise linear regression to improve performance of the model in the regression setting.
+License: `use_gpl3_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    ISLR,
+    stats
