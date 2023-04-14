@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Multivariate Adaptive Regression Splines (MARS)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+
+<table width="100%" summary="page for mars"><tr><td>mars</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Multivariate Adaptive Regression Splines (MARS)</h2>
+
+<h3>Description</h3>
+
+<p>Mars is a form of stepwise linear regression to improve
+performance of the model in the regression setting.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+mars(formula, data, control = mars.control())
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>formula</code></td>
+<td>
+<p>an R formula</p>
+</td></tr>
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>a data frame containing the data for the model</p>
+</td></tr>
+<tr valign="top"><td><code>control</code></td>
+<td>
+<p>an object of class 'mars.control'</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>The MARS function is applied for constructing Multivariate
+Adaptive Regression Splines models. It refers to a stepwise linear
+regression format that produces the required model. As it proceeds
+it is ensured that for example, it will first look for the single
+point across the range of X values where two different linear relationships
+between Y and X achieve the smallest error via GCV computation. The &quot;mars&quot;
+function takes as input a formula representing the relationship between the
+response and explanatory variables, the data set to fit the model on and a
+control object. It returns an object of class &quot;mars&quot;. This returned object
+is later used for further output results on different methods.
+</p>
+<p>The mars function comprises several methods, including anova.mars,
+plot.mars, predict.mars, print.mars, and summary.mars. These methods
+generate outputs through the application of the corresponding
+techniques - anova, plot, predict, print, and summary.
+</p>
+
+
+<h3>Value</h3>
+
+<p>an object of class 'mars' that include the final regression
+and a description of the basis functions. There are plot, predict, anova,
+summary and print methods for mars objects.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Jiawei Lin, Yanning Chen, Isabah Tabenda Hasan
+</p>
+
+
+<h3>References</h3>
+
+<p>Friedman, J. H. (1991). Multivariate Adaptive Regression Splines.
+The Annals of Statistics, 19(1), 1â€“67. http://www.jstor.org/stable/2241837
+</p>
+<p>Boehmke, B. (2020, February). Chapter 7 Multivariate Adaptive Regression
+Splines | Hands-On Machine Learning with R.
+Github.io. https://bradleyboehmke.github.io/HOML/mars.html
+</p>
+
+
+<h3>See Also</h3>
+
+<p>anova, predict, print, plot, summary
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+library(ISLR)
+data("Auto")
+data("College")
+data("Hitters")
+# example1:
+Auto_mars&lt;- mars(Auto$mpg~Auto$displacement+Auto$weight, data=Auto)
+# example2:
+College_mars=mars(College$Grad.Rate~College$F.Undergrad+College$P.Undergrad,data=College)
+# example3:
+Hitters_mars=mars(Hitters$Salary~Hitters$HmRun+Hitters$Hits, data=Hitters)
+
+</pre>
+
+
+</div></body></html>
