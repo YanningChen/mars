@@ -2,15 +2,15 @@
 Group JYI: Yanning Chen (301430370) Jiawei Lin (301328642) Isabah Tabenda Hasan (301435392)
 
 list of the file: 
-anova.mars.R - Analysis of Variance Table
+anova.mars.R: Analysis of Variance Table
 
-mars.R - an object of class 'mars' that include the final regression and a description of the basis functions. There are plot, predict, anova, summary and print methods for mars objects.
+mars.R: an object of class 'mars' that include the final regression and a description of the basis functions. There are plot, predict, anova, summary and print methods for mars objects.
 
-plot.mars.R - the plot function inputs the mars object and shows various diagnostic plots as output. The plot outputs include Residuals vs Leverage, Residuals vs Fitted, Normal Q-Q and Scale-Location.
+plot.mars.R: the plot function inputs the mars object and shows various diagnostic plots as output. The plot outputs include Residuals vs Leverage, Residuals vs Fitted, Normal Q-Q and Scale-Location.
 
-predict.mars.R - return the predicted values of the model for given new data.
+predict.mars.R: return the predicted values of the model for given new data.
 
-print.mars.R - print out formula, knot, coefficient, model.
+print.mars.R: print out formula, knot, coefficient, model.
 
 summary.mars.R: including the basis function with intercept and components, Call, Residuals, Coefficients, and its test Statistics.
 
