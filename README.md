@@ -26,6 +26,6 @@ Jiawei Lin: Code on Github
 
 Isabah Tabenda Hasan: Documentation
 
-Group activity: We discussed all the information about the project together.
+Group activity: We discussed all of the information about the project together.
 
  
